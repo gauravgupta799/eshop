@@ -16,7 +16,10 @@ export default function Header(){
         </div>
         <div className="header__search">
             <input type="text" className="header__searchInput" placeholder="Search your product..."/>
+            {/* <SearchIcon className="header__searchIcon"/> */}
+            <span className="header__searchWrapper">
             <SearchIcon className="header__searchIcon"/>
+            </span>
         </div>
         <div className="header__nav">
             <div className="nav__item">

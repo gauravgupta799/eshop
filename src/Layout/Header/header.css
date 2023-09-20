@@ -25,19 +25,29 @@
     display: flex;
     flex:1;
     align-items: center;
-    border-radius: 24px;
+    border-radius: 4px;
     margin: 0px 10px;
+    background: white;
 }
 .header__searchInput{
-    height: 12px;
-    padding: 10px;
+    padding: 0em 1em;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 4px;
+    background: transparent;
+    outline:none;
     border:none;
     width: 100%;
 }
-.header__searchIcon{
+.header__searchWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 5px;
-    height: 22px !important;
+    height: 100%;
     background-color: #ff9f00;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
 }
 
 .header__nav{

@@ -7,7 +7,6 @@
     width: 100%;
     height:420px;
     position: relative;
-    /* object-fit: contain; */
     z-index: -1;
     margin-bottom: -50px;
     mask-image:linear-gradient(to bottom, 
@@ -17,8 +16,5 @@
 .home__row{
     display: flex;
     flex-wrap: wrap;
-    gap:10px;
-    /* position: relative;
-    z-index:1; */
-    /* margin-inline:5px; */
+    gap:16px;
 }

@@ -1,27 +1,31 @@
 import React from 'react';
 import "./product.css"
-import StarIcon from '@mui/icons-material/Star';
-// import StarBorderIcon from '@mui/icons-material/StarBorder';
+// import StarIcon from '@mui/icons-material/Star';
+import { useDispatch} from 'react-redux';
+import { addToBasket } from '../../Redux/Actions/AddToBasket/addToBasket';
 
 function Product({product}) {
-    const {id, title, price, rating, image} = product;
-    console.log(product)
+    const { title, description,price,rating, thumbnail,} = product;
+    const dispatch = useDispatch();
+
   return (
     <div className="product">
+       <figure className="product__figure">
+            <img src={thumbnail} alt={title} loading="lazy"/>
+        </figure>
         <div className="product__info">
-            <p className="product__title">{title}</p>
+            <h3 className="product__title">{title}</h3>
+            <p className="product__desc">{description}</p>
             <p className="product__price">
-                <small>$</small><strong>{price}</strong>
+                Price: ${price}
             </p>
             <div className="product__rating">
-            {Array(rating).fill().map((_, i) =><p><StarIcon/></p>)}
+                <p>Rating: {rating}</p>
             </div>
         </div> 
-        <figure className="product__figure">
-            <img src={image} alt={title}/>
-        </figure>
+     
         <div className="product__btnWrapper">
-            <button>Add To Basket </button>
+            <button onClick={()=>dispatch(addToBasket(product))}>Add To Basket </button>
         </div>
     </div>
   )

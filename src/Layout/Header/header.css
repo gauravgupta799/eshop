@@ -2,6 +2,7 @@
     height: 60px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     background: #131921;
     position: sticky;
     top: 0;
@@ -23,7 +24,7 @@
 }
 .header__search{
     display: flex;
-    flex:1;
+    width: 60%;
     align-items: center;
     border-radius: 4px;
     margin: 0px 10px;
@@ -62,6 +63,7 @@
     margin-left: 10px;
     margin-right: 10px;
     color:white;
+    position: relative;
 }
 .nav__itemLIneOne{
     font-size: 10px;
@@ -79,5 +81,15 @@
     margin-left: 10px;
 }
 .nav__basketCount{
-    margin: 0px 10px;
+    /* margin: 0px 10px; */
+    font-size: 16px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: crimson;
+    text-align: center;
+    top: -6px;
+    left: 8px;
+    overflow: hidden;
 }

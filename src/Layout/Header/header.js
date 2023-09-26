@@ -26,7 +26,7 @@ export default function Header(){
         <div className="header__nav">
             <div className="nav__item">
                 <span className="nav__itemLineOne">Hello Guest</span>
-                <span className="nav__itemLineTwo">Sign In</span>
+                <Link to="/signIn" ><span className="nav__itemLineTwo">Sign In</span></Link>  
             </div>
             <div className="nav__item">
                 <span className="nav__itemLineOne">Your</span>
